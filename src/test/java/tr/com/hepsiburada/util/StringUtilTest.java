@@ -39,7 +39,7 @@ public class StringUtilTest extends TestCase {
         assertEquals("W", roverDirection);
     }
 
-    public void testRoverDirection_Throw_Error() throws InvalidPropertiesFormatException {
+    public void testRoverDirection_Throw_Error(){
         Assertions.assertThrows(InvalidPropertiesFormatException.class, () -> {
             StringUtil.roverDirection("WWW");
         });

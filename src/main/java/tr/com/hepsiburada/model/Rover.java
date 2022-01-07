@@ -32,4 +32,8 @@ public class Rover {
                 "roverState=" + roverState +
                 '}';
     }
+
+    public RoverState getRoverState() {
+        return roverState;
+    }
 }
