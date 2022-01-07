@@ -5,7 +5,7 @@ import tr.com.hepsiburada.model.Point;
 public class SouthState extends RoverState{
 
     public SouthState(Point coordinates) {
-        super(coordinates);
+        super(coordinates, SouthState.class.getSimpleName());
     }
 
     @Override

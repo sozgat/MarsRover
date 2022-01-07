@@ -5,13 +5,12 @@ import tr.com.hepsiburada.model.Point;
 public class EastState extends RoverState{
 
     public EastState(Point coordinates) {
-        super(coordinates);
+        super(coordinates, EastState.class.getSimpleName());
     }
 
     @Override
     public void moveForward() {
         coordinates.setX(coordinates.getX() + 1);
-
     }
 
     @Override
