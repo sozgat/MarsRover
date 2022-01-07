@@ -1,6 +1,11 @@
 package tr.com.hepsiburada.model;
 
 
+import tr.com.hepsiburada.state.EastState;
+import tr.com.hepsiburada.state.NorthState;
+import tr.com.hepsiburada.state.SouthState;
+import tr.com.hepsiburada.state.WestState;
+
 import static tr.com.hepsiburada.constant.ApplicationConstants.*;
 
 
@@ -25,7 +30,13 @@ public class Plateau {
     public void moveRover(String command){
      switch (command){
          case MOVE_FORWARD:
-             if (this.rover.getCoordinates().getX() < this.limitX && this.rover.getCoordinates().getY() < this.limitY)
+             if ((this.rover.getRoverState().getState().equals(EastState.class.getSimpleName()) ||
+                     this.rover.getRoverState().getState().equals(WestState.class.getSimpleName())) &&
+                     this.rover.getCoordinates().getX() < this.limitX)
+                 this.rover.moveForward();
+             if((this.rover.getRoverState().getState().equals(NorthState.class.getSimpleName()) ||
+                     this.rover.getRoverState().getState().equals(SouthState.class.getSimpleName())) &&
+                     this.rover.getCoordinates().getY() < this.limitY)
                  this.rover.moveForward();
              break;
          case TURN_LEFT:
@@ -33,6 +44,9 @@ public class Plateau {
              break;
          case TURN_RIGHT:
              this.rover.turnRight();
+             break;
+         default:
+             break;
      }
     }
 
