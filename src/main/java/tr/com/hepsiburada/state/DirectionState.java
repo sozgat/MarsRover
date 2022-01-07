@@ -1,6 +1,7 @@
 package tr.com.hepsiburada.state;
 
 import tr.com.hepsiburada.model.Point;
+
 import static tr.com.hepsiburada.constant.ApplicationConstants.*;
 
 
