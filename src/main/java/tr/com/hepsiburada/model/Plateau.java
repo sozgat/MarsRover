@@ -25,7 +25,7 @@ public class Plateau {
     public void moveRover(String command){
      switch (command){
          case MOVE_FORWARD:
-             if (this.rover.getCoordinates().getX() <= this.limitX && this.rover.getCoordinates().getY() <= this.limitY)
+             if (this.rover.getCoordinates().getX() < this.limitX && this.rover.getCoordinates().getY() < this.limitY)
                  this.rover.moveForward();
              break;
          case TURN_LEFT:

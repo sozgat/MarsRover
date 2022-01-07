@@ -38,4 +38,20 @@ public class PlateauTest extends TestCase {
         Assertions.assertEquals("Rover{roverState=EastState{coordinates=Point{x=1, y=2}}}", rover.toString());
         Assertions.assertEquals("EastState{coordinates=Point{x=1, y=2}}", rover.getRoverState().toString());
     }
+
+    public void testMoveRover2() {
+        Plateau plateau = new Plateau(5,5);
+        Point point = new Point(1,2);
+        Rover rover = new Rover(point,NORTH);
+
+        plateau.setRoverLocate(rover);
+
+        plateau.moveRover("M");
+        plateau.moveRover("M");
+        plateau.moveRover("M");
+        plateau.moveRover("M");
+        plateau.moveRover("M");
+        Assertions.assertEquals("Rover{roverState=NorthState{coordinates=Point{x=1, y=5}}}", rover.toString());
+        Assertions.assertEquals("NorthState{coordinates=Point{x=1, y=5}}", rover.getRoverState().toString());
+    }
 }
