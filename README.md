@@ -1,5 +1,7 @@
 # Mars Rover
 
+[![Java CI with Maven](https://github.com/sozgat/MarsRover/actions/workflows/maven.yml/badge.svg?branch=master)](https://github.com/sozgat/MarsRover/actions/workflows/maven.yml)
+
 ## Installation Guide
 Mars Rover Application can run on Docker easily. Please follow below commands on your terminal.
 
