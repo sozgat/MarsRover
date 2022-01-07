@@ -2,6 +2,8 @@
 
 [![Java CI with Maven](https://github.com/sozgat/MarsRover/actions/workflows/maven.yml/badge.svg?branch=master)](https://github.com/sozgat/MarsRover/actions/workflows/maven.yml)
 
+[![Coverage Status](https://coveralls.io/repos/github/sozgat/MarsRover/badge.svg?branch=master)](https://coveralls.io/github/sozgat/MarsRover?branch=master)
+
 ## Installation Guide
 Mars Rover Application can run on Docker easily. Please follow below commands on your terminal.
 
