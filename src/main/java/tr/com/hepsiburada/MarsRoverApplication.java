@@ -5,14 +5,8 @@ import tr.com.hepsiburada.model.Point;
 import tr.com.hepsiburada.model.Rover;
 import tr.com.hepsiburada.util.StringUtil;
 
-import javax.naming.InvalidNameException;
-import java.util.ArrayList;
 import java.util.InvalidPropertiesFormatException;
 import java.util.Scanner;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import static tr.com.hepsiburada.constant.ApplicationConstants.*;
 
 
 public class MarsRoverApplication {
@@ -36,13 +30,6 @@ public class MarsRoverApplication {
 
         System.out.print("Please enter commands (Ex: LMLMLMLMM): ");
         String commands = input.nextLine();
-
-
-
-        /*plateau.moveRover(TURN_LEFT);
-        plateau.moveRover(TURN_LEFT);
-        plateau.moveRover(TURN_LEFT);
-        plateau.moveRover(MOVE_FORWARD);*/
 
         char[] commandArray = commands.toCharArray();
 
