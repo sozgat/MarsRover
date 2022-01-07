@@ -11,7 +11,7 @@ public abstract class ApplicationConstants {
     public static final String WEST = "W";
 
     //Control Commands
-    public static final String MOVE_FORWARD = "W";
+    public static final String MOVE_FORWARD = "M";
     public static final String TURN_LEFT = "L";
     public static final String TURN_RIGHT = "R";
 

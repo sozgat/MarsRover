@@ -10,7 +10,7 @@ public class SouthState extends RoverState{
 
     @Override
     public void moveForward() {
-        coordinates.setY(coordinates.getY() + 1);
+        coordinates.setY(coordinates.getY() - 1);
     }
 
     @Override
