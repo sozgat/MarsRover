@@ -10,8 +10,8 @@ docker build -t marsrover .
 docker run -it marsrover
 ```
 
-## Results of Test Cases - Test Coverage
+## Results of Test Cases - Test Coverage (100%)
 
-![alt text](https://www.kampuskod.com/wp-content/uploads/2022/01/Screen-Shot-2022-01-08-at-01.01.18.png)
+![alt text](https://www.kampuskod.com/wp-content/uploads/2022/01/Screen-Shot-2022-01-08-at-01.52.02.png)
 
 
