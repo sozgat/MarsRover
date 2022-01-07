@@ -7,10 +7,6 @@ import static tr.com.hepsiburada.constant.ApplicationConstants.*;
 
 public class StringUtil {
 
-    private StringUtil() {
-        throw new IllegalCallerException();
-    }
-
     public static int[] plateauLimits(String input){
         return Arrays.stream(input.split(" "))
                 .mapToInt(Integer::parseInt)
